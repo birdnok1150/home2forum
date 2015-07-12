@@ -1,0 +1,7 @@
+RewriteEngine On 
+
+RewriteBase /ci/ 
+
+RewriteCond $1 !^(index\.php|css|img|libs|assets) 
+
+RewriteRule ^(.*)$ index.php [L]
